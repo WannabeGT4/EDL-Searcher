@@ -1,0 +1,141 @@
+/* General Styling */
+body {
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Header and Bug Row Styling */
+.title, .list-item {
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+/* Header Row Styling */
+.title {
+  background-color: #333;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  padding: 10px;
+  padding-left: 20px;
+  justify-content: space-between; /* Adjusts space between the columns */
+  max-width: 1200px; /* Adjust to desired maximum width */
+  margin: 0 auto; /* Centers the title container */
+}
+
+
+/* Bug Item Styling */
+.list-item {
+  background-color: white;
+  border: 1px solid #ddd;
+  margin-top: 5px;
+  transition: background 0.3s;
+}
+
+.list-item:hover {
+  background-color: #f1f1f1;
+}
+
+/* Define Column Widths */
+.column {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+}
+
+.column.description {
+  flex: 5;
+  text-align: left;
+}
+
+/* Column size adjustments */
+.column:nth-child(4), .titelColumn:nth-child(4) {
+  flex: 7;
+}
+
+/* Input and Dropdown Styling */
+.searchBar, .dropdown {
+  width: 90%;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Sort Button */
+.sortButton {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto; /* Centers the button horizontally */
+}
+
+
+.sortButton:hover {
+  background-color: #0056b3;
+}
+
+/* Bug ID and Known/Addressed Styling */
+.knownAddressed {
+  font-weight: bold;
+  color: #d9534f;
+}
+
+.version {
+  font-weight: bold;
+  color: #0275d8;
+}
+
+/* Title Row Styling */
+.titelColumn {
+  flex: 1;
+  padding: 10px;
+  margin-right: 5px;
+}
+
+.titleText {
+  font-weight: bold;
+}
+
+.title {
+  background-color: #000000;
+  border: 1px solid #ccc;
+  color: #ccc;
+  font-size: 18px;
+  border-radius: 8px;
+  padding: 5px;
+  display: flex;
+}
+
+/* Highlight class for text */
+.highlight {
+  background-color: yellow;
+  font-weight: bold;
+}
+
+/* Hover Effects */
+.list-item:hover .knownAddressed {
+  color: #d43f3a;
+}
+.searchBar3 {
+  width: 400px; /* Adjust the width as needed */
+}
+.searchBar2 {
+  width: 100px; /* Adjust the width as needed */
+}
+.searchBar1 {
+  width: 100px; /* Adjust the width as needed */
+}

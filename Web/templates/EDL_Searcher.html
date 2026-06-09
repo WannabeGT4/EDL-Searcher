@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EDL Searcher</title>
+  <link rel="stylesheet" href="/static/css/edlsearch.css">
+  <script src="static/js/edl_search.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1 class="main-title">EDL Searcher</h1>
+    <div class="search-container">
+      <label class="label">Search Type:</label>
+      <div class="button-group">
+        <button id="ipv4Button" class="searchTypeButton active" onclick="setSearchType('ipv4')">IPv4</button>
+        <button id="ipv6Button" class="searchTypeButton" onclick="setSearchType('ipv6')">IPv6</button>
+        <button id="urlButton" class="searchTypeButton" onclick="setSearchType('url')">URL</button>
+      </div>
+      <input type="text" id="searchInput" class="searchBar" placeholder="Enter search term">
+      <button class="searchButton" onclick="searchEDL()">Search</button>
+    </div>
+    <div id="results" class="results"></div>
+  </div>
+</body>
+</html>

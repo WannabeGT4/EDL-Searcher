@@ -1,0 +1,156 @@
+/* General Styling */
+body {
+    font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #f4f7f9;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px;
+  }
+  
+  /* Title Styling */
+  .main-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    letter-spacing: 0.5px;
+  }
+  
+  /* Search Section Styling */
+  .search-container {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .search-container .label {
+    font-size: 1rem;
+    margin-right: 10px;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  /* Button Group Styling */
+  .button-group {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .searchTypeButton {
+    background-color: #f1f1f1;
+    color: #333;
+    border: 1px solid #ddd;
+    padding: 12px 20px;
+    font-size: 1rem;
+    margin: 0 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    outline: none;
+  }
+  
+  .searchTypeButton:hover {
+    background-color: #ddd;
+  }
+  
+  .searchTypeButton.active {
+    background-color: #FA7A2D;
+    color: white;
+    border-color: #FA7A2D;
+  }
+  
+  .searchTypeButton:focus {
+    outline: none;
+  }
+  
+  /* Input and Button Styling */
+  .searchBar {
+    width: 100%;
+    max-width: 300px;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+  }
+  
+  .searchBar:focus {
+    border-color: #E9691D;
+    outline: none;
+  }
+  
+  .searchButton {
+    background-color: #FA7A2D;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    width: 150px;
+  }
+  
+  .searchButton:hover {
+    background-color: #E9691D;
+  }
+  
+  .searchButton:active {
+    background-color: #FA7A2D;
+  }
+  
+  /* Results Section Styling */
+  .results {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Styling for the Results */
+  .list-item {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-top: 10px;
+    width: 100%;
+    max-width: 800px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .list-item:hover {
+    background-color: #f7f7f7;
+    transform: translateY(-5px);
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .search-container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .searchBar, .searchButton {
+      width: 100%;
+      margin: 10px 0;
+    }
+  
+    .main-title {
+      font-size: 2rem;
+    }
+  }
+  
